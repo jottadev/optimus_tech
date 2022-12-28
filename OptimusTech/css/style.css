@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  font-family: "Inter";
+}
+header ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+header ul li {
+  list-style: none;
+  margin-right: 2rem;
+}
+header ul li a {
+  text-decoration: none;
+  font-family: "Inter";
+  color: #667085;
+}
+header .login {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 1rem;
+}
+header .login a {
+  text-decoration: none;
+  font-family: "Inter";
+  color: #667085;
+}
+header .login button {
+  font-family: "Inter";
+  background: #8E2424;
+  color: #FFF;
+  border: 0;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px 25px;
+}
+header .login button:hover {
+  cursor: pointer;
+}
+header .svg {
+  display: none;
+}
+@media screen and (max-width: 999px) {
+  header header {
+    justify-content: space-between;
+  }
+  header .svg {
+    display: block;
+    cursor: pointer;
+    width: 35px;
+  }
+  header nav, header .login {
+    display: none;
+  }
+}
+
+.about {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 2rem;
+}
+.about h5 {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  color: #8E2424;
+}
+.about h1 {
+  color: #101828;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 48px;
+}
+.about p {
+  font-family: "Inter";
+  font-size: 1.1rem;
+  color: #667085;
+  width: 700px;
+  text-align: center;
+}
+
+.statistics {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 4rem 5rem;
+}
+.statistics div {
+  width: 270px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  justify-content: first baseline;
+}
+.statistics div h2 {
+  font-family: "Inter";
+  color: #8E2424;
+  font-size: 60px;
+  margin-bottom: 1rem;
+}
+.statistics div h5 {
+  color: #101828;
+  font-family: "Inter";
+  font-size: 18px;
+  margin-bottom: 1rem;
+}
+.statistics div p {
+  color: #667085;
+  font-family: "Inter";
+  font-size: 16px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$font: 'Inter';
+
+
+header{
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    font-family: $font;
+    
+
+    ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+        li{
+            list-style: none;
+            margin-right: 2rem;
+
+            a{
+                text-decoration: none;
+                font-family: $font;
+                color: #667085;
+ 
+            }
+        }
+    }
+
+    .login{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 1rem;
+
+        a{
+            text-decoration: none;
+            font-family: $font;
+            color: #667085;
+        }
+
+        button{
+            font-family: $font;
+            background: #8E2424;
+            color: #FFF;
+            border: 0;
+            outline: none;
+            border-radius: 5px;
+            padding: 10px 25px;
+
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+
+    .svg{
+       display: none;
+    }
+
+    @media screen and (max-width: 999px){
+
+        header{
+            justify-content: space-between;
+        }
+
+        .svg{
+            display: block;
+            cursor: pointer;
+            width: 35px;
+        }
+
+        nav, .login{
+            display: none;
+        }
+    }
+
+}
+
+
+.about{
+    height: 50vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+
+    h5{
+        font-family: $font;
+        font-weight: 400;
+        font-size: 16px;
+        color: #8E2424;
+    }
+
+    h1{
+        color: #101828;
+        font-family: $font;
+        font-weight: 600;
+        font-size: 48px;
+
+    }
+
+    p{
+        font-family: $font;
+        font-size: 1.1rem;
+        color: #667085;
+        width: 700px;
+        text-align: center;
+        
+    }
+}
+
+
+.statistics{
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 4rem 5rem;
+
+    div{
+        width: 270px;
+        height: 250px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start ;
+        flex-wrap: nowrap;
+        justify-content: first baseline;
+
+        h2{
+            font-family: $font;
+            color: #8E2424;
+            font-size: 60px;
+
+            margin-bottom: 1rem;
+        }
+
+        h5{
+            color: #101828;
+            font-family: $font;
+            font-size: 18px;
+
+            margin-bottom: 1rem;
+        }
+
+        p{
+            color: #667085;
+            font-family: $font;
+            font-size: 16px;
+        }
+    }
+}
