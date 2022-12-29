@@ -47,14 +47,16 @@ header .login button {
   outline: none;
   border-radius: 5px;
   padding: 10px 25px;
+  transition: 0.1s ease-in;
 }
 header .login button:hover {
   cursor: pointer;
+  background: #6f1d1d;
 }
 header .svg {
   display: none;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 1024px) {
   header header {
     justify-content: space-between;
   }
@@ -128,6 +130,207 @@ header .svg {
   margin-bottom: 1rem;
 }
 .statistics div p {
+  color: #667085;
+  font-family: "Inter";
+  font-size: 16px;
+}
+
+.opportunitys {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.opportunitys .content {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.opportunitys .content h5 {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  color: #8E2424;
+}
+.opportunitys .content h2 {
+  color: #101828;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 36px;
+}
+.opportunitys .content p {
+  font-family: "Inter";
+  font-size: 1.1rem;
+  color: #667085;
+  width: 700px;
+  text-align: center;
+}
+.opportunitys .vagas_conteiner {
+  width: 71.5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 0 0 3rem;
+}
+.opportunitys .vagas_conteiner .design {
+  width: 500px;
+  padding: 2rem 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.opportunitys .vagas_conteiner .design .vaga1, .opportunitys .vagas_conteiner .design .vaga2 {
+  width: 500px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.opportunitys .vagas_conteiner .design .vaga1 h5, .opportunitys .vagas_conteiner .design .vaga2 h5 {
+  font-family: "Inter";
+  color: #101828;
+  font-size: 18px;
+}
+.opportunitys .vagas_conteiner .design .vaga1 div, .opportunitys .vagas_conteiner .design .vaga2 div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  font-family: "Inter";
+  color: #667085;
+  font-size: 16px;
+}
+.opportunitys .vagas_conteiner .design .vaga1 div p, .opportunitys .vagas_conteiner .design .vaga2 div p {
+  margin-right: 1rem;
+}
+.opportunitys .vagas_conteiner .desen_software {
+  width: 500px;
+  padding: 2rem 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.opportunitys .vagas_conteiner .desen_software .vaga1, .opportunitys .vagas_conteiner .desen_software .vaga2, .opportunitys .vagas_conteiner .desen_software .vaga3 {
+  width: 500px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.opportunitys .vagas_conteiner .desen_software .vaga1 h5, .opportunitys .vagas_conteiner .desen_software .vaga2 h5, .opportunitys .vagas_conteiner .desen_software .vaga3 h5 {
+  font-family: "Inter";
+  color: #101828;
+  font-size: 18px;
+}
+.opportunitys .vagas_conteiner .desen_software .vaga1 div, .opportunitys .vagas_conteiner .desen_software .vaga2 div, .opportunitys .vagas_conteiner .desen_software .vaga3 div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  font-family: "Inter";
+  color: #667085;
+  font-size: 16px;
+}
+.opportunitys .vagas_conteiner .desen_software .vaga1 div p, .opportunitys .vagas_conteiner .desen_software .vaga2 div p, .opportunitys .vagas_conteiner .desen_software .vaga3 div p {
+  margin-right: 1rem;
+}
+
+.comments {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 4rem 5rem;
+}
+.comments .content {
+  text-align: center;
+}
+.comments .content h5 {
+  font-family: "Inter";
+  color: #8E2424;
+  font-size: 14px;
+  margin-bottom: 1rem;
+}
+.comments .content p {
+  font-family: "Inter";
+  color: #101828;
+  font-size: 36px;
+  width: 71.5vw;
+  text-align: center;
+}
+.comments .sx {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.comments .sx img {
+  margin-bottom: 1rem;
+}
+.comments .sx h5 {
+  font-family: "Inter";
+  color: #101828;
+  font-size: 16px;
+}
+.comments .sx p {
+  font-family: "Inter";
+  font-size: 14px;
+  color: #667085;
+}
+
+footer {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+footer .content {
+  text-align: center;
+}
+footer .content h5 {
+  font-family: "Inter";
+  color: #101828;
+  font-size: 36px;
+  margin-bottom: 1rem;
+}
+footer .content p {
+  font-family: "Inter";
+  color: #667085;
+  font-size: 20px;
+}
+footer .register input {
+  width: 360px;
+  height: 44px;
+  border-radius: 8px;
+  border: 1px solid #667085;
+  outline: none;
+  padding: 1rem;
+  font-size: 1rem;
+  color: #101828;
+  font-family: "Inter";
+  margin-right: 1rem;
+}
+footer .register button {
+  background: #8E2424;
+  color: #FFF;
+  font-family: "Inter";
+  padding: 12px 20px 12px 20px;
+  border-radius: 8px;
+  border: 0;
+  outline: none;
+  font-size: 16px;
+  transition: 0.1s ease-in;
+}
+footer .register button:hover {
+  cursor: pointer;
+  background: #6f1d1d;
+}
+footer p {
   color: #667085;
   font-family: "Inter";
   font-size: 16px;

@@ -56,9 +56,11 @@ header{
             outline: none;
             border-radius: 5px;
             padding: 10px 25px;
+            transition: .1s ease-in;
 
             &:hover{
                 cursor: pointer;
+                background: #6f1d1d;
             }
         }
     }
@@ -67,7 +69,7 @@ header{
        display: none;
     }
 
-    @media screen and (max-width: 999px){
+    @media screen and (max-width: 1024px){
 
         header{
             justify-content: space-between;
@@ -164,5 +166,247 @@ header{
             font-family: $font;
             font-size: 16px;
         }
+    }
+}
+
+.opportunitys
+{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .content{
+        height: 30vh;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+
+        h5{
+            font-family: $font;
+            font-weight: 400;
+            font-size: 16px;
+            color: #8E2424;
+        }
+
+        h2{
+            color: #101828;
+            font-family: $font;
+            font-weight: 600;
+            font-size: 36px;
+    
+        }
+    
+        p{
+            font-family: $font;
+            font-size: 1.1rem;
+            color: #667085;
+            width: 700px;
+            text-align: center;
+            
+        }
+    }
+
+    .vagas_conteiner{
+        width: 71.5vw;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 0 0 3rem;
+
+        .design{
+            width: 500px;
+            padding: 2rem 0 2rem 0;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            
+            .vaga1, .vaga2{
+                width: 500px;
+                height: 70px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: space-between;
+
+                h5{
+                    font-family: $font;
+                    color: #101828;
+                    font-size: 18px;
+                }
+
+                div{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    font-family: $font;
+                    color: #667085;
+                    font-size: 16px;
+
+                    p{
+                        margin-right: 1rem;
+                    }
+                }
+            }
+        }
+
+        .desen_software{
+            width: 500px;
+            padding: 2rem 0 2rem 0;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            
+            .vaga1, .vaga2, .vaga3{
+                width: 500px;
+                height: 70px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: space-between;
+
+                h5{
+                    font-family: $font;
+                    color: #101828;
+                    font-size: 18px;
+                }
+
+                div{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    font-family: $font;
+                    color: #667085;
+                    font-size: 16px;
+
+                    p{
+                        margin-right: 1rem;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+.comments{
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 4rem 5rem;
+
+    .content{
+
+        text-align: center;
+        h5{
+            font-family: $font;
+            color: #8E2424;
+            font-size: 14px;
+            margin-bottom: 1rem;
+        }
+
+        p{
+            font-family: $font;
+            color: #101828;
+            font-size: 36px;
+            width: 71.5vw;
+            text-align: center;
+        }
+    }
+
+    .sx{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img{
+            margin-bottom: 1rem;
+        }
+
+        h5{
+            font-family: $font;
+            color:#101828;
+            font-size: 16px;
+        }
+
+        p{
+            font-family: $font;
+            font-size: 14px;
+            color:#667085;
+        }
+    }
+}
+
+footer{
+    height: 50vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    .content{
+
+        text-align: center;
+        h5{
+            font-family: $font;
+            color: #101828;
+            font-size: 36px;
+            margin-bottom: 1rem;
+        }
+
+        p{
+            font-family: $font;
+            color: #667085;
+            font-size: 20px;
+        }
+    }
+
+    .register{
+        input{
+            width: 360px;
+            height: 44px;
+            border-radius: 8px;
+            border: 1px solid #667085;
+            outline: none;
+            padding: 1rem;
+            font-size: 1rem;
+            color: #101828;
+            font-family: $font;
+            margin-right: 1rem;
+        }
+
+        button{
+            background: #8E2424;
+            color: #FFF;
+            font-family: $font;
+            padding: 12px 20px 12px 20px;
+            border-radius: 8px;
+            border: 0;
+            outline: none;
+            font-size: 16px;
+            transition: .1s ease-in;
+
+            &:hover{
+                cursor: pointer;
+                background: #6f1d1d;
+            }
+        }
+
+    }
+
+    p{
+        color: #667085;
+        font-family: $font;
+        font-size: 16px;
     }
 }
