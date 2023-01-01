@@ -6,13 +6,19 @@
 
 $font: 'Inter';
 
+body{
+    overflow-x: hidden;
+}
+
 
 header{
     height: 10vh;
+    width: 100vw;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding: 0 1rem 0 1rem;
     flex-wrap: wrap;
     font-family: $font;
     
@@ -65,7 +71,7 @@ header{
         }
     }
 
-    .svg{
+    .menu_mobile{
        display: none;
     }
 
@@ -75,10 +81,17 @@ header{
             justify-content: space-between;
         }
 
-        .svg{
+        .menu_mobile{
             display: block;
-            cursor: pointer;
             width: 35px;
+
+            img{
+                width: 35px;
+
+                &:hover{
+                    cursor: pointer;
+                }
+            }
         }
 
         nav, .login{
@@ -90,8 +103,7 @@ header{
 
 
 .about{
-    height: 50vh;
-
+    padding: 4rem 0 4rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -120,6 +132,11 @@ header{
         color: #667085;
         width: 700px;
         text-align: center;
+
+        @media screen and (max-width: 768px){
+
+            width: 85vw;
+        }
         
     }
 }
@@ -184,6 +201,7 @@ header{
         align-items: center;
         justify-content: center;
         gap: 2rem;
+        text-align: center;
 
         h5{
             font-family: $font;
@@ -197,6 +215,10 @@ header{
             font-family: $font;
             font-weight: 600;
             font-size: 36px;
+
+            @media screen and (max-width: 599px){
+                width: 80vw;
+            }
     
         }
     
@@ -206,9 +228,16 @@ header{
             color: #667085;
             width: 700px;
             text-align: center;
+
+            @media screen and (max-width: 599px){
+                width: 80vw;
+                margin-bottom: 2rem;
+            }
             
         }
+
     }
+
 
     .vagas_conteiner{
         width: 71.5vw;
@@ -218,6 +247,12 @@ header{
         align-items: flex-start;
         padding: 0 0 0 3rem;
 
+        @media screen and (max-width: 599px){
+            margin-top: 2rem;
+            width: 90vw;
+            padding: 0;
+        }
+
         .design{
             width: 500px;
             padding: 2rem 0 2rem 0;
@@ -225,6 +260,10 @@ header{
             flex-direction: column;
             gap: 2rem;
             
+            @media screen and (max-width: 599px){
+                padding: 0;
+            }
+
             .vaga1, .vaga2{
                 width: 500px;
                 height: 70px;
@@ -290,6 +329,20 @@ header{
             }
         }
     }
+
+    .box_figure{
+        margin-top: 2rem;
+        width: 1200px;
+        height: 400px;
+        background: url(../assets/background_peoples.png);
+        background-position: center;
+
+        @media screen and (max-width: 1250px){
+            width: 95vw;
+
+        }
+
+    }
     
 }
 
@@ -306,6 +359,7 @@ header{
     .content{
 
         text-align: center;
+        margin: 0 auto;
         h5{
             font-family: $font;
             color: #8E2424;
@@ -319,7 +373,19 @@ header{
             font-size: 36px;
             width: 71.5vw;
             text-align: center;
+
+            @media screen and (max-width: 599px){
+
+                width: 85vw;
+                font-size: 30px;
+            }
         }
+
+    }
+
+    
+    @media screen and (max-width: 599px){
+        padding: 4rem 0;
     }
 
     .sx{
@@ -357,17 +423,30 @@ footer{
     .content{
 
         text-align: center;
+        margin: 0 auto;
         h5{
             font-family: $font;
             color: #101828;
             font-size: 36px;
             margin-bottom: 1rem;
+
+            @media screen and (max-width: 768px){
+                width: 650px;
+            }
+
+            @media screen and (max-width: 599px){
+                width: 80vw;
+            }
         }
 
         p{
             font-family: $font;
             color: #667085;
             font-size: 20px;
+
+            @media screen and (max-width: 599px){
+                width: 80vw;
+            }
         }
     }
 
@@ -402,11 +481,38 @@ footer{
             }
         }
 
+        @media screen and (max-width: 768px){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            input{
+                width: 500px;
+                margin: 0 0 1rem 0;
+                
+            }
+
+            button{
+                width: 500px;
+            }
+        }
+
+        @media screen and (max-width: 599px){
+            input, button{
+                width: 80vw;
+            }
+        }
+
     }
 
     p{
         color: #667085;
         font-family: $font;
         font-size: 16px;
+
+        @media screen and (max-width: 599px){
+            text-align: center;
+        }
+
     }
 }

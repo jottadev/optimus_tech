@@ -11,7 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;700&display=swap" rel="stylesheet"> 
 
-    <link rel="stylesheet" href="css/style.css"> <!-- Link SCSS-->
+    <link rel="stylesheet" href="css/style.css"> <!-- Link SCSS -->
+    <script src="script/index.js"></script> <!-- Link SCRIPT JS -->
 </head>
 <body>
     <header>
@@ -28,8 +29,10 @@
             <a href="#"> Entrar </a>
             <button type="button"> Cadastrar </button>
         </div>
-
-        <img src="assets/icon_menu_mobile.svg" alt="icone_menu_mobile" class="svg">
+        <div class="menu_mobile">
+            <img src="assets/icon_menu_mobile.svg" alt="icone_menu_mobile" id="menuIcon">
+        </div>
+        
     </header> <!-- Header -->
 
     <main>
@@ -86,9 +89,7 @@
                 <h2> Estamos procurando por talentos </h2>
                 <p> Somos uma equipe 100% remota com pessoas do Brasil inteiro. </p>
             </div>
-            <figure>
-                <img src="assets/background_peoples.png" alt="foto_com_pessoas_reunidas">
-            </figure>
+            <div class="box_figure"></div>
             <div class="vagas_conteiner">
                 <div class="design">
                     <div class="vaga1">
@@ -125,7 +126,7 @@
                         </div>
                     </div>
 
-                    <div class="vaga3   ">
+                    <div class="vaga3">
                         <h5> Desenvolvedor(a) Back-end  </h5>
                         <div>
                             <p> Full time</p>
